@@ -1,0 +1,31 @@
+{
+  "name": "logfire-client",
+  "version": "0.0.1",
+  "description": "Client for logfire",
+  "main": "lib/logfire-client.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/logfirejs/logfire.git"
+  },
+  "keywords": [
+    "logging",
+    "events",
+    "redis",
+    "messages"
+  ],
+  "author": "Sascha Gehlich <sascha@gehlich.us>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/logfirejs/logfire-client/issues"
+  },
+  "homepage": "https://github.com/logfirejs/logfire-client",
+  "devDependencies": {
+    "mocha": "~1.18.2"
+  },
+  "dependencies": {
+    "underscore": "~1.6.0"
+  }
+}
