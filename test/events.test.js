@@ -40,4 +40,28 @@ describe('client.events', function() {
       });
     });
   });
+
+  describe('#get', function() {
+    var id;
+    beforeEach(function() {
+      return client.events.create({
+        event: 'cache.hit'
+      }).then(function (response) {
+        id = response.$id;
+      });
+    });
+
+    it('successfully gets the event with the given id', function() {
+      return client.events.get(id).then(function(response) {
+        response.$id.should.equal(1);
+      });
+    });
+
+    it('should return an error if it fails to get an event', function() {
+      return client.events.get('foobar')
+        .catch(function(err) {
+          err.message.should.equal('`id` has to be an integer.');
+        });
+    });
+  });
 });
