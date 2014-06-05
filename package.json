@@ -27,7 +27,7 @@
   "devDependencies": {
     "istanbul": "~0.2.10",
     "logfire": "git://github.com/logfirejs/logfire#master",
-    "mocha": "~1.18.2",
+    "mocha": "~1.20.0",
     "should": "~4.0.1"
   },
   "dependencies": {
