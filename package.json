@@ -1,7 +1,7 @@
 {
   "name": "logfire-client",
   "version": "0.0.1",
-  "description": "Client for logfire",
+  "description": "Node.js client for Logfire",
   "main": "lib/logfire-client.js",
   "scripts": {
     "test": "node_modules/.bin/mocha"
@@ -26,6 +26,7 @@
     "mocha": "~1.18.2"
   },
   "dependencies": {
+    "request": "~2.36.0",
     "underscore": "~1.6.0"
   }
 }

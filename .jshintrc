@@ -1,5 +1,8 @@
 {
   "globals"   : {
+    /* NODE */
+    "console"    : false,
+
     /* MOCHA */
     "describe"   : false,
     "it"         : false,
@@ -10,6 +13,7 @@
 
     /* COMMONJS / NODE */
     "module"     : false,
+    "require"    : false,
     "_"          : false
   }
 }
