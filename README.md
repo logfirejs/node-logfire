@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="http://s14.directupload.net/images/140605/k3cy9975.png" />
+  <img src="http://s1.directupload.net/images/140606/yj7q5ftv.png" />
 </p>
 <p align="center">
   <a href="https://npm.im/logfire-client">
