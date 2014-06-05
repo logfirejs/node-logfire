@@ -5,18 +5,22 @@ var Logfire = require('../lib/logfire-client');
 var client, server;
 client = new Logfire('http://localhost:8088');
 
-before(function() {
-  return TestHelpers.runServer()
-    .then(function (_server) {
-      server = _server;
-    });
-});
-
-beforeEach(function () {
-  return server.store.reset();
-});
-
 describe('client.events', function() {
+  before(function() {
+    return TestHelpers.runServer()
+      .then(function (_server) {
+        server = _server;
+      });
+  });
+
+  beforeEach(function () {
+    return server.store.reset();
+  });
+
+  after(function() {
+    return server.close();
+  });
+
   describe('#create', function() {
     it('successfully create an event and return the id', function() {
       return client.events.create({

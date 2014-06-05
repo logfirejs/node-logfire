@@ -7,7 +7,7 @@ var client = new Logfire('http://localhost:8085');
  * 60 minutes grouped by `file_type` where `file_type` is not `html`,
  * `css` or `js`.
  */
-client.query({
+client.query.query({
   events: ['cache.hit', 'cache.miss'],
   select: ['$count'],
   group: 'file_type',
