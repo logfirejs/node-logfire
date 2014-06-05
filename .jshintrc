@@ -1,9 +1,8 @@
 {
   "globals"   : {
-    /* NODE */
     "console"    : false,
+    "process"    : false,
 
-    /* MOCHA */
     "describe"   : false,
     "it"         : false,
     "before"     : false,
@@ -11,7 +10,6 @@
     "after"      : false,
     "afterEach"  : false,
 
-    /* COMMONJS / NODE */
     "module"     : false,
     "require"    : false,
     "_"          : false

@@ -1,6 +1,6 @@
 'use strict';
 var Logfire = require('logfire-client');
-var client = Logfire.createClient('http://localhost:8085');
+var client = new Logfire('http://localhost:8085');
 
 /**
  * Get the amount of `cache.hit` and `cache.miss` events in the past
