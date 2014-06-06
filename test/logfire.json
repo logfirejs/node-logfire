@@ -6,18 +6,16 @@
     "auth": ""
   },
 
-  "categories": {
-    "cache": {
-      "events": {
-        "hit": {
-          "fields": {
-            "file_type": {
-              "type": "string"
-            }
-          }
-        },
-        "miss": {}
+  "port": 8088,
+
+  "events": {
+    "cache.hit": {
+      "fields": {
+        "file_type": {
+          "type": "string"
+        }
       }
-    }
+    },
+    "cache.miss": {}
   }
 }
