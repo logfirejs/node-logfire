@@ -7,9 +7,9 @@ client.events.create({
   data: {
     file_type: 'html'
   }
-}).then(function(id) {
+}).then(function(response) {
   console.log('Event created!');
-  client.events.get(id)
+  client.events.get(response.$id)
     .then(function (event) {
       console.log(event);
     });
