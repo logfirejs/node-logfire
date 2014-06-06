@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/logfirejs/logfire-client",
   "devDependencies": {
+    "coveralls": "^2.10.0",
     "istanbul": "~0.2.10",
     "logfire": "git://github.com/logfirejs/logfire#master",
     "mocha": "~1.20.0",
