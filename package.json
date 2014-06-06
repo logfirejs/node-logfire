@@ -1,6 +1,6 @@
 {
   "name": "logfire-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node.js client for Logfire",
   "main": "lib/logfire-client.js",
   "scripts": {
